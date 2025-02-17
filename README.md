@@ -147,3 +147,7 @@ This project is licensed under the Apache 2.0 License.
 
 ## 📚 Acknowledgment
 This repository makes use of code from the original **ColBERT repository** by [Stanford FutureData Lab](https://github.com/stanford-futuredata/ColBERT). We appreciate their work in open-sourcing ColBERT and providing a strong foundation for efficient dense retrieval.
+
+
+## 📧 Contact
+For any questions or collaborations, feel free to reach out to us at **dummy-email-1@example.com** or **dummy-email-2@example.com**.
