@@ -2,6 +2,10 @@
 ## 📌Amharic Dense Retrieval Models
 This repository provides **four Amharic-specific retrieval models**, optimized for **Amharic passage retrieval**. These models outperform multilingual baselines, offering strong benchmarks for **dense retrieval** in low-resource language Amharic.
 
+🚧 **Under Development** 🚧  
+> This repository is a work in progress. We are adding features, improving documentation, and refining the code. Expect frequent updates! :)  
+
+
 ## 👐 Features
 -  **Pretrained Amharic Retrieval Models** (RoBERTa-Base, RoBERTa-Medium, BERT-Medium, ColBERT-AM)
 -  **Hugging Face model & dataset links for easy access**
