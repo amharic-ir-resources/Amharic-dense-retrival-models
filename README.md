@@ -1,8 +1,8 @@
 # Amharic-IR-Resources
-## Amharic Dense Retrieval Models
+## 📌Amharic Dense Retrieval Models
 This repository provides **four Amharic-specific retrieval models**, optimized for **Amharic passage retrieval**. These models outperform multilingual baselines, offering strong benchmarks for **dense retrieval** in low-resource language Amharic.
 
-## 📌 Features
+## 👐 Features
 -  **Pretrained Amharic Retrieval Models** (RoBERTa-Base, RoBERTa-Medium, BERT-Medium, ColBERT-AM)
 -  **Hugging Face model & dataset links for easy access**
 -  **Training, evaluation, and inference scripts for reproducibility**
@@ -83,15 +83,16 @@ python -c "import torch, transformers, numpy; print(' All dependencies installed
 ## 🔍 How to Train and Evaluate Models
 ### **4️⃣ Train a Model**
 ```bash
-python models/RoBERTa-Base-Embd/train.py
+sbatch scripts/train_colbert.sh
 ```
 
 ### **5️⃣ Evaluate Models**
 ```bash
-python models/RoBERTa-Base-Embd/evaluate.py
+sbatch scripts/evaluate.sh
 ```
 
 ### **6️⃣ Inference (Retrieval)**
+- Example script
 ```bash
 python models/RoBERTa-Base-Embd/inference.py --query "ሰፊ የሆነ የዜና ምርጫ"
 ```
@@ -104,6 +105,26 @@ python models/RoBERTa-Base-Embd/inference.py --query "ሰፊ የሆነ የዜና
 | ColBERT-AM                     | 0.754  | 0.858     | 0.931      |
 | **RoBERTa-Base-Amharic-embd**       | **0.755**  | **0.897**  | **0.971**  |
 | RoBERTa-Medium-Amharic-embd         | 0.707  | 0.861     | 0.963      |
+
+
+### **Multilingual vs Amharic-Specific Models**  
+We compare our Amharic-specific dense retrieval models against multilingual baselines. Our models significantly outperform the multilingual counterparts in passage retrieval tasks.
+
+To ensure a fair comparison, we evaluate the top-performing multilingual embedding models from the [Massive Text Embedding Benchmark (MTEB) Leaderboard](https://huggingface.co/spaces/mteb/leaderboard) using the same test set as our Amharic embedding models. This provides a direct performance comparison between general-purpose multilingual models and those specifically optimized for Amharic retrieval.
+
+Our largest embedding model, RoBERTa-Base-Amharic-Embed beats all of the multilingual embedding models on the MRR@10, NDCG@10 and Recall metrics while having 1/5th of their param count 🚀.
+
+| Model | Params | MRR@10 | NDCG@10 | Recall@100 |
+|--------------------------------|--------|--------|---------|------------|
+| **Multilingual Models** |  |  |  |  |
+| gte-modernbert-base | 10 | 0.019 | 0.022 | 0.065 |
+| gte-multilingual-base | 20 | 0.649 | 0.684 | 0.904 |
+| multilingual-e5-large-instruct | 30 | 0.713 | 0.747 | 0.946 |
+| snowflake-arctic-embed-l-v2.0 | 40 | 0.719 | 0.755 | 0.957 |
+| **Amharic-Specific Models (Ours)** |  |  |  |  |
+| BERT-Medium-Amharic-embed | 50 | 0.657 | 0.696 | 0.945 |
+| RoBERTa-Medium-Amharic-embed | 60 | 0.707 | 0.744 | 0.963 |
+| RoBERTa-Base-Amharic-embed | 70 | **0.755** † | **0.790** † | **0.971** † |
 
 ---
 
