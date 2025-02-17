@@ -7,10 +7,10 @@ This repository provides **four Amharic-specific retrieval models**, optimized f
 
 
 ## 👐 Features
--  **Pretrained Amharic Retrieval Models** (RoBERTa-Base, RoBERTa-Medium, BERT-Medium, ColBERT-AM)
+-  **Pretrained Amharic Retrieval Models** Includes ( RoBERTa-Base-Amharic-Embd, RoBERTa-Medium-Amharic-Embd, BERT-Medium-Amharic-Embd, and ColBERT-AM for dense retrieval.)
 -  **Hugging Face model & dataset links for easy access**
 -  **Training, evaluation, and inference scripts for reproducibility**
--  **Comparison of Sparse (BM25), Dense (ColBERT)**
+-  **Benchmarks BM25 (sparse retrieval), bi-encoder dense retrieval, and ColBERT (late interaction retrieval) for Amharic.**
 -  **MS MARCO-style dataset conversion script & direct dataset links**
 
 
