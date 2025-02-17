@@ -117,14 +117,14 @@ Our largest embedding model, RoBERTa-Base-Amharic-Embed beats all of the multili
 | Model | Params | MRR@10 | NDCG@10 | Recall@100 |
 |--------------------------------|--------|--------|---------|------------|
 | **Multilingual Models** |  |  |  |  |
-| gte-modernbert-base | 10 | 0.019 | 0.022 | 0.065 |
-| gte-multilingual-base | 20 | 0.649 | 0.684 | 0.904 |
-| multilingual-e5-large-instruct | 30 | 0.713 | 0.747 | 0.946 |
-| snowflake-arctic-embed-l-v2.0 | 40 | 0.719 | 0.755 | 0.957 |
+| gte-modernbert-base | 149M | 0.019 | 0.022 | 0.065 |
+| gte-multilingual-base | 305M | 0.649 | 0.684 | 0.904 |
+| multilingual-e5-large-instruct | 560M | 0.713 | 0.747 | 0.946 |
+| snowflake-arctic-embed-l-v2.0 | 568M | 0.719 | 0.755 | 0.957 |
 | **Amharic-Specific Models (Ours)** |  |  |  |  |
-| BERT-Medium-Amharic-embed | 50 | 0.657 | 0.696 | 0.945 |
-| RoBERTa-Medium-Amharic-embed | 60 | 0.707 | 0.744 | 0.963 |
-| RoBERTa-Base-Amharic-embed | 70 | **0.755** † | **0.790** † | **0.971** † |
+| BERT-Medium-Amharic-embed | 40M | 0.657 | 0.696 | 0.945 |
+| RoBERTa-Medium-Amharic-embed | 42M | 0.707 | 0.744 | 0.963 |
+| RoBERTa-Base-Amharic-embed | 110M | **0.755** † | **0.790** † | **0.971** † |
 
 ---
 
