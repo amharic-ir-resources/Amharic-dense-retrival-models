@@ -8,8 +8,7 @@ __pycache__/
 # my files 
 dataset/
 logs-slurm/
-models/bm25/outputs/
-data/outputs/
+model-training/bm25/outputsdata/outputs/
 # Distribution / packaging
 .Python
 build/
@@ -172,3 +171,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+model-training/bm25/outputs/bm25_rankings.tsv
