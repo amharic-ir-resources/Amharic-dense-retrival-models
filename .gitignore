@@ -9,6 +9,7 @@ __pycache__/
 dataset/
 logs-slurm/
 model-training/bm25/outputsdata/outputs/
+data/outputs/
 # Distribution / packaging
 .Python
 build/
