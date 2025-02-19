@@ -17,14 +17,14 @@ This repository provides **four Amharic-specific retrieval models**, optimized f
 ## 🚀 Pretrained Models
 We provide **both dense embedding models and ColBERT models**.
 
-### 🔹 **Dense Embedding Models**
+###  **Dense Embedding Models**
 | Model                          | Hugging Face Link |
 |--------------------------------|------------------|
 | **RoBERTa-Base-Amharic-Embd**       | [HF Model](https://huggingface.co/OUR_HF_USERNAME/RoBERTa-Base-Amharic) |
 | **RoBERTa-Medium-Amharic-Embd**     | [HF Model](https://huggingface.co/OUR_HF_USERNAME/RoBERTa-Medium-Amharic) |
 | **BERT-Medium-Amharic-Embd**        | [HF Model](https://huggingface.co/OUR_HF_USERNAME/BERT-Medium-Amharic) |
 
-### 🔹 **ColBERT Retrieval Model**
+###  **ColBERT Retrieval Model**
 | Model                          | Hugging Face Link |
 |--------------------------------|------------------|
 | **ColBERT-Amharic**            | [HF Model](https://huggingface.co/OUR_HF_USERNAME/ColBERT-AM) |
@@ -33,13 +33,13 @@ We provide **both dense embedding models and ColBERT models**.
 ## 🗂 Datasets
 We use the **Amharic News dataset** and provide a **script to convert it into MS MARCO passage retrieval dataset format**.
 
-### 🔹 **Dataset Links**
+###  **Dataset Links**
 | Dataset                         | Link |
 |---------------------------------|------|
 | **Amharic News Dataset (HF)**   | [Hugging Face](https://huggingface.co/datasets/OUR_HF_USERNAME/Amharic-News) |
 | **MS MARCO-style Amharic Dataset** | [Google Drive](https://drive.google.com/OUR_LINK) |
 
-### 🔹 **Create MS MARCO-Style Dataset**
+###  **Create MS MARCO-Style Dataset**
 You can use our script to **convert the dataset into MS MARCO format**:
 ```bash
 python scripts/convert_to_msmarco.py --input data/amharic_news.json --output data/msmarco_amharic.json
@@ -65,14 +65,14 @@ cd Amharic-dense-retrival-models
 ### **2️⃣ Install Dependencies**
 You can install dependencies using either Conda or pip, depending on your preference.
 
-🔹 Option 1: Using Conda (Recommended)`
+ Option 1: Using Conda (Recommended)`
 - Conda ensures better reproducibility and manages non-Python dependencies automatically.
 
 ```bash 
 conda env create -f amharic_environment.yml
 conda activate amharic_environment
 ```
-🔹 Option 2: Using Pip
+ Option 2: Using Pip
 If you prefer pip, install dependencies with:
 
 ```bash
